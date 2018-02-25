@@ -5,22 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rocket Canvas Drawing</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Canvas Collab: R2D2</title>
 </head>
 
 <body>
 
-  <canvas id="rocket" width="1024" height="768">
+  <canvas id="canvas" width="1000" height="1000" style="border: 1px solid blue;">
 
       <script>
-          var c = document.getElementById("rocket");
+          var c = document.getElementById("canvas");
           var ctx = c.getContext("2d");
 
-          </script>
+          <!-- R2D2 Head -->
+          ctx.beginPath();
+          ctx.moveTo(327,280);
+          ctx.quadraticCurveTo(493,64,662,282);
+          ctx.lineTo(327,280);
+          ctx.fillStyle = "#e1e2e6";
+          ctx.fill();
 
-        </canvas>
+      </script>
 
-    </body>
+  </canvas>
 
-    </html>
+</body>
+
+</html>
