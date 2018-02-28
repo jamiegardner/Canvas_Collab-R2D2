@@ -1,1 +1,4 @@
-This repository contains the shared work of Jamie Gardner and Oliver Bailey to create R2D2 in canvas form.
+This repository contains work that is part of a university collaborative project.
+##
+
+Hope you enjoy.
