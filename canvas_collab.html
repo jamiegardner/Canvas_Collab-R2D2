@@ -10,18 +10,36 @@
 
 <body>
 
-  <canvas id="canvas" width="1000" height="1000" style="border: 1px solid blue;">
+  <canvas id="canvas" width="1000" height="1000" style="background-color: #a5dbdb;">
 
       <script>
           var c = document.getElementById("canvas");
           var ctx = c.getContext("2d");
 
-          <!-- R2D2 Head : Jamie -->
+          <!-- R2D2 Head Section -->
           ctx.beginPath();
-          ctx.moveTo(327,280);
-          ctx.quadraticCurveTo(493,64,662,282);
-          ctx.lineTo(327,280);
-          ctx.fillStyle = "#e1e2e6";
+          ctx.moveTo(332,319);
+          ctx.quadraticCurveTo(505,104,670,319);
+          ctx.lineTo(332,319);
+          ctx.fillStyle = "#e7e7e7";
+          ctx.fill();
+
+          <!-- R2D2 Leftarm Section -->
+          ctx.beginPath();
+          ctx.rect(320,320,-65,424);
+          ctx.fillStyle = '#fff';
+          ctx.fill();
+
+          <!-- R2D2 Arm Inner rectangle -->
+          ctx.beginPath();
+          ctx.rect(265,478,-11,200);
+          ctx.fillStyle = '#82abdd';
+          ctx.fill();
+
+          <!-- R2D2 Arm Inner circle -->
+          ctx.beginPath();
+          ctx.rect(297,700,-21,21);
+          ctx.fillStyle = '#e7e7e7';
           ctx.fill();
 
       </script>
