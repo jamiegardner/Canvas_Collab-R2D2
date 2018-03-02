@@ -15,31 +15,44 @@
       <script>
           var c = document.getElementById("canvas");
           var ctx = c.getContext("2d");
+          
+          function drawRect(x,y,w,h,c) {
+              ctx.fillStyle = c;
+              ctx.fill();
+              ctx.fillRect(x,y,w,h);
+          }
+
+          drawRect(331,320,340,391,'#fff'); <!-- R2D2 Body Section -->
+          drawRect(320,320,-65,424,'#fff'); <!-- R2D2 Leftarm Section -->
+          drawRect(265,478,-11,200,'#82abdd'); <!-- R2D2 Leftarm Section -->
 
           <!-- R2D2 Head Section -->
           ctx.beginPath();
           ctx.moveTo(332,319);
-          ctx.quadraticCurveTo(505,104,670,319);
-          ctx.lineTo(332,319);
+          ctx.quadraticCurveTo(500,75,670,319);
           ctx.fillStyle = "#e7e7e7";
-          ctx.fill();
-
-          <!-- R2D2 Leftarm Section -->
-          ctx.beginPath();
-          ctx.rect(320,320,-65,424);
-          ctx.fillStyle = '#fff';
-          ctx.fill();
-
-          <!-- R2D2 Arm Inner rectangle -->
-          ctx.beginPath();
-          ctx.rect(265,478,-11,200);
-          ctx.fillStyle = '#82abdd';
           ctx.fill();
 
           <!-- R2D2 Arm Inner circle -->
           ctx.beginPath();
           ctx.rect(297,700,-21,21);
           ctx.fillStyle = '#e7e7e7';
+          ctx.fill();
+
+          <!-- R2D2 Leftarm to Head Connector -->
+          ctx.beginPath();
+          ctx.rect(331,320,-11,160);
+          ctx.fillStyle = '#e7e7e7';
+          ctx.fill();
+
+          <!-- R2D2 Leftfoot Section -->
+          ctx.beginPath();
+          ctx.moveTo(320,743);
+          ctx.lineTo(345,743);
+          ctx.lineTo(369,826);
+          ctx.lineTo(215,826);
+          ctx.lineTo(239,743);
+          ctx.fillStyle = "#fff";
           ctx.fill();
 
       </script>
